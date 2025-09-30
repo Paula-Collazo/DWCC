@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor de Tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 id="titulo-principal">Gestor de Tareas</h1>
+            <p id="subtitulo">Organiza tus actividades diarias</p>
+        </header>
+
+        <div class="stats oculto" id="estadisticas">
+            <div class="stat-item">
+                <span class="stat-label">Total:</span>
+                <span id="total-tareas">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Completadas:</span>
+                <span id="tareas-completadas">0</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-label">Pendientes:</span>
+                <span id="tareas-pendientes">0</span>
+            </div>
+        </div>
+
+        <section class="formulario-section">
+            <form id="formulario-tarea">
+                <input 
+                    type="text" 
+                    id="input-tarea" 
+                    placeholder="Escribe una nueva tarea..."
+                    class="input-principal"
+                    required
+                >
+                <select id="prioridad-tarea" class="select-prioridad">
+                    <option value="baja">Baja</option>
+                    <option value="media" selected>Media</option>
+                    <option value="alta">Alta</option>
+                </select>
+                <button type="submit" class="btn btn-agregar">Agregar Tarea</button>
+            </form>
+        </section>
+
+        <section class="controles">
+            <button class="btn btn-secundario" id="btn-mostrar-todas">Mostrar Todas</button>
+            <button class="btn btn-secundario" id="btn-mostrar-completadas">Mostrar Completadas</button>
+            <button class="btn btn-secundario" id="btn-mostrar-pendientes">Mostrar Pendientes</button>
+            <button class="btn btn-peligro" id="btn-eliminar-completadas">Eliminar Completadas</button>
+        </section>
+
+        <section class="lista-section">
+            <h2>Mis Tareas</h2>
+            <ul id="lista-tareas" class="lista-tareas">
+                <!-- Las tareas se agregarán dinámicamente aquí -->
+            </ul>
+            <p id="mensaje-vacio" class="mensaje-vacio">No hay tareas. ¡Agrega una nueva!</p>
+        </section>
+
+        <section class="herramientas oculto" id="herramientas">
+            <h3>Herramientas</h3>
+            <button class="btn btn-info" id="btn-duplicar-primera">Duplicar Primera Tarea</button>
+            <button class="btn btn-info" id="btn-mover-arriba">Mover Primera al Final</button>
+            <button class="btn btn-warning" id="btn-modo-oscuro">Cambiar Tema</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
