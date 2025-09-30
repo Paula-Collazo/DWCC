@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Encabezado -->
+        <header>
+            <h1 id="nombre">Tu Nombre</h1>
+            <p id="profesion">Tu Profesión</p>
+        </header>
+
+        <!-- Botones de control -->
+        <div class="controles">
+            <button id="btn-cambiar-nombre">Cambiar Nombre</button>
+            <button id="btn-cambiar-profesion">Cambiar Profesión</button>
+            <button id="btn-tema">Modo Oscuro</button>
+        </div>
+
+        <!-- Sección Sobre mí -->
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p id="descripcion">Escribe aquí tu descripción personal...</p>
+            <button id="btn-editar-desc">Editar Descripción</button>
+        </section>
+
+        <!-- Sección Habilidades -->
+        <section id="habilidades">
+            <h2>Mis Habilidades</h2>
+            <div id="lista-habilidades">
+                <div class="habilidad">HTML</div>
+                <div class="habilidad">CSS</div>
+                <div class="habilidad">JavaScript</div>
+            </div>
+            <button id="btn-añadir-habilidad">Añadir Habilidad</button>
+            <button id="btn-ocultar-habilidades">Ocultar Habilidades</button>
+        </section>
+
+        <!-- Sección Contacto -->
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <div class="info-contacto">
+                <p><strong>Email:</strong> <span id="email">tu@email.com</span></p>
+                <p><strong>Teléfono:</strong> <span id="telefono">123-456-789</span></p>
+                <p><strong>Ciudad:</strong> <span id="ciudad">Tu Ciudad</span></p>
+            </div>
+            <button id="btn-cambiar-email">Cambiar Email</button>
+        </section>
+
+        <!-- Caja de información adicional (oculta por defecto) -->
+        <div id="info-extra" class="oculto">
+            <h3>Información Extra</h3>
+            <p>Esta es información adicional que puedes mostrar u ocultar.</p>
+        </div>
+
+        <button id="btn-mostrar-info">Mostrar Información Extra</button>
+
+        <!-- Pie de página -->
+        <footer>
+            <p id="mensaje-footer">Perfil creado con JavaScript</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

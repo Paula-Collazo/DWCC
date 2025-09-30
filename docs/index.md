@@ -1,6 +1,6 @@
-![mimida criminal](img/sinchan.jpg)
+![mimida criminal](img/sinchan_cajón.webp)
 
-# Cajón de Sastre
+# Cajón de Sastre - Recursos Útiles/Interesantes
 
 ## 📖 Documentación Oficial
 - [MDN Web Docs – JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript) → La documentación más completa y práctica de JS.  
