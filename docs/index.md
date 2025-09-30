@@ -40,8 +40,7 @@
 - [Sli.dev](https://sli.dev/) → Crea presentaciones con Markdown y Vue/Svelte/React.  
 
 ## 🏗 Patrones de Diseño
-Patrones de diseño explicados de forma clara y visual.
-- [Refactoring Guru](https://refactoring.guru/design-patterns)
+- [Refactoring Guru](https://refactoring.guru/design-patterns) → Patrones de diseño explicados de forma clara y visual.
 - [SourceMaking](https://sourcemaking.com/)
 
 ## 🤖 Generadores / Entornos Online
