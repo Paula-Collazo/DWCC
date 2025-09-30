@@ -25,7 +25,8 @@ theme:
 # Navegación
 nav:
   - Variables en JS: 01_variables.md
-  - Asincronía en JS: Programación Asíncrona en JavaScript.md
+  - Asincronía en JS: Programación Asíncrona.md
+  - Manipulación del DOM: Manipulación del DOM.md
 
 # Extensiones básicas
 markdown_extensions:
