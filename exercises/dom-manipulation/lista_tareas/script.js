@@ -1,6 +1,19 @@
 // 1. SELECCIÓN DE ELEMENTOS
 // Usa getElementById, querySelector, querySelectorAll, getElementsByClassName
 
+const tituloPrincipal = document.getElementById("titulo-principal");
+const formulario = document.getElementById("formulario-section");
+const tareas = document.getElementById("lista-section");
+const estadísticas = document.getElementById("estadisticas");
+
+const inputTarea = document.querySelector("#input-tarea");
+const select = document.querySelector("#prioridad-tarea");
+const botonAgregar = document.querySelector(".btn-agregar");
+
+
+const botones = document.querySelectorAll(".boton");
+
+
 
 // 2. FUNCIONES AUXILIARES
 // Función para crear una nueva tarea (usa createElement, appendChild, setAttribute)

@@ -168,7 +168,7 @@ body.tema-oscuro #info-extra h3 {
 }
 
 .oculto {
-    display: none;
+    display: none !important;
 }
 
 footer {
