@@ -1,185 +1,186 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    min-height: 100vh;
-    padding: 20px;
-    transition: background 0.3s;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  padding: 20px;
+  transition: background 0.3s;
 }
 
 body.tema-oscuro {
-    background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
 }
 
 .container {
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
-    border-radius: 15px;
-    padding: 40px;
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
-    transition: all 0.3s;
+  max-width: 800px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s;
 }
 
 body.tema-oscuro .container {
-    background: #2a2a3e;
-    color: #e0e0e0;
+  background: #2a2a3e;
+  color: #e0e0e0;
 }
 
 header {
-    text-align: center;
-    padding-bottom: 30px;
-    border-bottom: 3px solid #667eea;
-    margin-bottom: 30px;
+  text-align: center;
+  padding-bottom: 30px;
+  border-bottom: 3px solid #667eea;
+  margin-bottom: 30px;
 }
 
 #nombre {
-    font-size: 2.5em;
-    color: #667eea;
-    margin-bottom: 10px;
+  font-size: 2.5em;
+  color: #667eea;
+  margin-bottom: 10px;
 }
 
 body.tema-oscuro #nombre {
-    color: #9fa8da;
+  color: #9fa8da;
 }
 
 #profesion {
-    font-size: 1.3em;
-    color: #666;
+  font-size: 1.3em;
+  color: #666;
 }
 
 body.tema-oscuro #profesion {
-    color: #aaa;
+  color: #aaa;
 }
 
 .controles {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 30px;
-    flex-wrap: wrap;
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
 }
 
 button {
-    padding: 12px 20px;
-    background: #667eea;
-    color: white;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
-    font-size: 0.95em;
-    transition: all 0.3s;
-    font-weight: 600;
+  padding: 12px 20px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 0.95em;
+  transition: all 0.3s;
+  font-weight: 600;
 }
 
 button:hover {
-    background: #5568d3;
-    transform: translateY(-2px);
+  background: #5568d3;
+  transform: translateY(-2px);
 }
 
 section {
-    margin-bottom: 30px;
-    padding: 25px;
-    background: #f8f9fa;
-    border-radius: 10px;
-    transition: background 0.3s;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: #f8f9fa;
+  border-radius: 10px;
+  transition: background 0.3s;
 }
 
 body.tema-oscuro section {
-    background: #1a1a2e;
+  background: #1a1a2e;
 }
 
 section h2 {
-    color: #667eea;
-    margin-bottom: 15px;
-    font-size: 1.8em;
+  color: #667eea;
+  margin-bottom: 15px;
+  font-size: 1.8em;
 }
 
 body.tema-oscuro section h2 {
-    color: #9fa8da;
+  color: #9fa8da;
 }
 
 #descripcion {
-    line-height: 1.8;
-    color: #333;
-    margin-bottom: 15px;
+  line-height: 1.8;
+  color: #333;
+  margin-bottom: 15px;
 }
 
 body.tema-oscuro #descripcion {
-    color: #e0e0e0;
+  color: #e0e0e0;
 }
 
 #lista-habilidades {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-bottom: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 15px;
 }
 
 .habilidad {
-    background: #667eea;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: 600;
+  background: #667eea;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-weight: 600;
+  cursor: pointer;
 }
 
 .info-contacto {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 .info-contacto p {
-    margin: 10px 0;
-    font-size: 1.1em;
+  margin: 10px 0;
+  font-size: 1.1em;
 }
 
 .info-contacto strong {
-    color: #667eea;
+  color: #667eea;
 }
 
 body.tema-oscuro .info-contacto strong {
-    color: #9fa8da;
+  color: #9fa8da;
 }
 
 #info-extra {
-    background: #fff3cd;
-    border: 2px solid #ffc107;
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
+  background: #fff3cd;
+  border: 2px solid #ffc107;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 20px 0;
 }
 
 body.tema-oscuro #info-extra {
-    background: #3a3a2e;
-    border-color: #ffc107;
+  background: #3a3a2e;
+  border-color: #ffc107;
 }
 
 #info-extra h3 {
-    color: #856404;
-    margin-bottom: 10px;
+  color: #856404;
+  margin-bottom: 10px;
 }
 
 body.tema-oscuro #info-extra h3 {
-    color: #ffc107;
+  color: #ffc107;
 }
 
 .oculto {
-    display: none !important;
+  display: none !important;
 }
 
 footer {
-    text-align: center;
-    padding-top: 30px;
-    border-top: 2px solid #ddd;
-    margin-top: 30px;
-    color: #666;
+  text-align: center;
+  padding-top: 30px;
+  border-top: 2px solid #ddd;
+  margin-top: 30px;
+  color: #666;
 }
 
 body.tema-oscuro footer {
-    border-top-color: #444;
-    color: #aaa;
+  border-top-color: #444;
+  color: #aaa;
 }
