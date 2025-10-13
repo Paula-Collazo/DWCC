@@ -1,0 +1,11 @@
+#padre {
+    padding: 40px;
+    background-color: blue;
+    text-align: center;
+}
+
+#hijo {
+    padding: 20px;
+    background-color: greenyellow;
+
+}

@@ -2,7 +2,7 @@
 // Usa getElementById, querySelector, querySelectorAll, getElementsByClassName
 
 const tituloPrincipal = document.getElementById("titulo-principal");
-const formulario = document.getElementById("formulario-section");
+const formulario = document.getElementById("formulario-tarea");
 const listaTareas = document.getElementById("lista-tareas");
 const estadísticas = document.getElementById("estadisticas");
 
@@ -16,21 +16,45 @@ const itemsTareas = document.getElementsByClassName("tarea-item");
 // 2. FUNCIONES AUXILIARES
 // Función para crear una nueva tarea (usa createElement, appendChild, setAttribute)
 
-function crearNuevaTarea() {
-  const nuevaTareaa = inputTarea.value;
-  if (nuevaTareaa.trim() !== "") {
+function crearNuevaTarea(textoTarea, prioridad) {
     const liTarea = document.createElement("li");
-    liTarea.className = "tarea-item";
-    liTarea.textContent = nuevaTareaa;
-    liTarea.setAttribute("data-prioridad", select.value)
+    const checkbox = document.createElement("input");
+    const spanTexto = document.createElement("span");
+    const spanPrioridad = document.createElement("span");
+    const btnEliminar = document.createElement("button");
+  
+   
+    checkbox.setAttribute("type", "checkbox");
+    
+    liTarea.classList.add("tarea-item");
+    checkbox.classList.add("tarea-checkbox");
+    spanTexto.classList.add("tarea-texto");
+    spanPrioridad.classList.add("tarea-prioridad");
+    btnEliminar.classList.add("btn-eliminar");
+    
+
+
+    spanTexto.textContent = textoTarea;
+    spanPrioridad.textContent = prioridad;
+    btnEliminar.textContent = "eliminar";
+
+    liTarea.appendChild(checkbox);
+    liTarea.appendChild(spanTexto);
+    liTarea.appendChild(spanPrioridad);
+    liTarea.appendChild(btnEliminar);
+    
+
+
     listaTareas.appendChild(liTarea);
   }
-}
 
-botonAgregar.addEventListener("click", (e) => {
-  e.preventDefault();
-  crearNuevaTarea();
-});
+
+  formulario.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const textoTarea = inputTarea.value.trim();
+    const prioridad = select.value;
+    crearNuevaTarea(textoTarea, prioridad);
+  })
 
 // Función para actualizar estadísticas (usa textContent)
 
